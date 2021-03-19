@@ -10,7 +10,7 @@ ENV LD_LIBRARY_PATH /usr/local/caffe2_build/lib:${LD_LIBRARY_PATH}
 RUN apt-get -y update
 
 # Clone the Detectron repository
-RUN git clone https://github.com/facebookresearch/DetectAndTrack.git /detectandtrack
+RUN git clone https://github.com/anDoer/CorrPose/blob/master/docker/deploy/build.sh /detectandtrack
 
 RUN apt-get install -y libeigen3-dev python-tk
 
@@ -31,6 +31,11 @@ RUN make
 
 # [Optional] Build custom ops
 RUN make ops
+
+WORKDIR /root/ 
+RUN wget https://download.jetbrains.com/python/pycharm-professional-2020.1.tar.gz
+RUN tar -xzvf pycharm-professional-2020.1.tar.gz
+RUN rm pycharm-professional-2020.1.tar.gz
 
 # Go to Densepose root
 WORKDIR /detectandtrack
