@@ -213,7 +213,7 @@ pyqt=5.6.0=py27h4b1e83c_5
 pysocks=1.6.7=py27he2db6d2_1
 pytables=3.4.2=py27_7
 pytest=3.3.2=py27_0
-python=2.7.14=ha6fc286_23
+python=2.7
 python-dateutil=2.6.1=py27h4ca5741_1
 pytz=2017.3=py27h001bace_0
 pywavelets=0.5.2=py27hecda097_0
