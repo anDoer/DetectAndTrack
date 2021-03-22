@@ -10,12 +10,12 @@ ENV LD_LIBRARY_PATH /usr/local/caffe2_build/lib:${LD_LIBRARY_PATH}
 RUN apt-get -y update
 
 # Clone the Detectron repository
-RUN git clone https://github.com/anDoer/DetectAndTrack /detectandtrack
+RUN git clone https://github.com/anDoer/DetectAndTrack.git /detectandtrack
 
-RUN apt-get install -y libeigen3-dev python-tk
-RUN echo ASd
+RUN apt-get install -y libeigen3-dev python-tk libgflags-dev
+RUN echo ASasddasdasd
 # Install Python dependencies
-RUN pip install --upgrade pip
+#RUN pip install --upgrade pip
 RUN cd /detectandtrack \
         && pip install -r requirements.txt
 
@@ -31,15 +31,11 @@ WORKDIR /detectandtrack/lib
 RUN make
 
 # [Optional] Build custom ops
-RUN make ops
-
-WORKDIR /root/ 
-RUN wget https://download.jetbrains.com/python/pycharm-professional-2020.1.tar.gz
-RUN tar -xzvf pycharm-professional-2020.1.tar.gz
-RUN rm pycharm-professional-2020.1.tar.gz
+#RUN make ops
 
 # Go to Densepose root
 WORKDIR /detectandtrack
 
+RUN apt-get install -y vim
 RUN apt-get clean
 
