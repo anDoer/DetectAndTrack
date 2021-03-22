@@ -80,7 +80,7 @@ greenlet=0.4.12=py27hac09c53_0
 grin=1.2.1=py27_4
 gst-plugins-base=1.12.4=h33fb286_0
 gstreamer=1.12.4=hb53b477_0
-h5py=2.7.1
+h5py=2.10.0
 harfbuzz=1.7.6=hc5b324e_0
 hdf5=1.10.1=2
 heapdict=1.0.0=py27_2
