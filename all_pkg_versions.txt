@@ -63,8 +63,8 @@ fontconfig=2.12.6=h49f89f6_0
 freetype=2.8.1=0
 funcsigs=1.0.2=py27h83f16ab_0
 functools32=3.2.3.2=py27h4ead58f_1
-future=0.16.0=py27_1
-futures=3.2.0=py27h7b459c0_0
+future=0.16.0
+futures=3.2.0
 geos=3.6.2=heeff764_2
 get_terminal_size=1.0.0=haa9412d_0
 gevent=1.2.2=py27h475ea6a_0
