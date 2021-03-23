@@ -88,7 +88,7 @@ html5lib=1.0.1
 icu=58.2
 idna=2.6
 imageio=2.2.0
-imagesize=0.7.1=
+imagesize=0.7.1
 intel-openmp=2018.0.0
 ipaddress=1.0.19
 ipykernel=4.8.0
