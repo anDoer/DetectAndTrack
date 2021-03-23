@@ -21,7 +21,7 @@ bkcharts=0.2
 blas=1.1=openblas
 blaze=0.11.3
 bleach=2.1.2
-bokeh=0.12.13=
+bokeh=0.12.13
 boto=2.48.0
 bottleneck=1.2.1
 bzip2=1.0.6
